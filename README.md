@@ -1,27 +1,9 @@
-# Baixada Web Studio - Template
+# Portfolio - Vinícius Marques
 
 ## Overview
 
-This repository is a Wordpress template for showing all my works. It is built using the following technologies:
+This repository is my personal portfolio. Created with HTML5 and CSS3:
 
-- [Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/)
-- [PHP](https://www.php.net/)
-- [WordPress](https://wordpress.org/)
+-[HTML5 - Hypertext Markup Language](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [Css - Cascading Style Sheets](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
 - [JavaScript](https://www.javascript.com/)
-
-## Wordpress installation and Setup
-
-Install all [Wordpress](https://br.wordpress.org/) presets normally
-
-### Required Plugins
-
-- [ACF - Advanced Custom Fields](https://www.advancedcustomfields.com/) - Pro Version Used
-- [SAVE SVG](https://wordpress.org/plugins/safe-svg/)
-- [Contact Form 7](https://contactform7.com/)
-
-### SASS
-
-To run SASS, navigate to the `wp-content/themes/baixada-web-studio` directory and execute the following command after installing Node.js:
-
-```bash
-npm run starttailwind

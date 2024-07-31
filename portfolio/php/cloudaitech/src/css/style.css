@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Neuro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/neuropolitcalrg.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Resamitz';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/resamitz.woff2") format('woff2');
+}
+
+header nav ul{
+    display: none;
+}
+
+header nav.active ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 10;
+    padding-top: 9.375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header .close.navbar{
+    display: none;
+}
+
+header .close.navbar.active{
+    display: block;
+    z-index: 20;
+}
+
+.text-image img{
+    clip-path: polygon(100% 0%, 100% 100%, 59% 100%, 1% 0%);
+}
+
+@media (min-width: 1024px){
+    .image-text img{
+        clip-path: polygon(0% 1%, 70% 0%, 43% 100%, 0% 100%);
+    }
+}
+
+.image-text img{
+    clip-path: polygon(0% 1%, 100% 0%, 43% 100%, 0% 100%);
+}
+
+.cases .wrapper{
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width: 768px){
+    .cases .wrapper{
+        max-width: 1700px
+    }
+}
+
+.cases .item{
+    clip-path: polygon(32% 0%, 79% 0%, 57% 100%, 12% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cases .item.second{
+    transform: translateX(300px);
+}
+
+.cases .item.third{
+    transform: translateX(600px);
+}
+
+.cases .item.fourth{
+    transform: translateX(900px);
+}
+
+.cases .item.fifth{
+    transform: translateX(1200px);
+}

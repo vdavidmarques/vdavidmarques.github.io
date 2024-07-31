@@ -152,8 +152,6 @@ header .social-icons a:hover img.hover, footer a:hover img.hover{
   display: block;
 }
 
-
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -260,7 +258,7 @@ footer nav{
 }
 
 .popup-content {
-  padding: 2.5rem 1.25rem 1.25rem;
+  padding: 2.5rem 1.25rem 2.5rem;
   background: #fff;
   position: relative;
   width: 100%;
@@ -269,7 +267,7 @@ footer nav{
 }
 
 .popup-content .title{
-  font-size: 1.5625rem;
+  font-size: 30px;
   margin-bottom: 0.625rem;
 }
 
@@ -290,10 +288,25 @@ footer nav{
   row-gap: 1.25rem;
 }
 
+.popup-content .subtitle.new-section{
+  margin-top: 40px;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+
 .popup-content .cases{
-  display: flex;
+  display: grid;
   flex-direction: column;
   row-gap: 2.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 20;
+}
+
+.popup-content .cases .case{
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .popup-content .cases strong{
@@ -397,6 +410,11 @@ footer nav{
     flex-direction: row;
     row-gap: 0;
   }  
+
+  .popup-content .cases{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {

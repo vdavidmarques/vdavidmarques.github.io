@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudAi Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/tailwindcss.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/tailwindcss">
+        @layer base {
+            .container{
+                @apply mx-auto px-4 lg:px-8
+            }
+              /* 20px */
+            .heading-title-xxs{
+                @apply font-neuro text-sm lg:text-[1.25rem] lg:leading-9 tracking-wide
+            }
+        
+            /* 30px */
+            .heading-title-xs{
+                @apply font-neuro text-lg lg:text-[1.875rem] lg:leading-8 tracking-wide
+            }
+            
+            /* 32px */
+            .heading-title-sm{
+                @apply font-neuro lg:text-[2rem] lg:leading-[3.125rem] tracking-wide
+            }
+            
+            /* 46px */
+            .heading-title-md{
+                @apply font-neuro text-2xl lg:text-[2.875rem] lg:leading-[3.125rem] tracking-wide
+            }
+            
+            /* 50px */
+            .heading-title-lg{
+                @apply font-neuro lg:text-[3.125rem] lg:leading-[3.75rem] tracking-wide
+            }
+            
+            /* 60px */
+            .heading-title-xl{
+                @apply font-neuro text-5xl lg:text-[3.75rem] lg:leading-[3.125rem] tracking-wide
+            }
+            
+            /* 65px */
+            .heading-title-2xl{
+                @apply font-neuro text-[1.625rem] leading-[1.875rem] lg:text-[4.0625rem] lg:leading-[5.4375rem] tracking-wide
+            }
+
+            .heading-text-lg{
+                @apply lg:text-[1rem] lg:leading-[1.75rem]
+            }
+
+            .heading-text-xl{
+                @apply text-[0.875rem] leading-6 lg:leading-9 lg:text-[1.25rem]
+            }
+
+            .button{
+                @apply w-fit h-9 rounded-[0.625rem] uppercase px-5 py-3 flex items-center justify-center heading-title-xxs transition-colors
+            }
+
+            .button-first{
+                @apply bg-red-dark text-white border border-white hover:bg-red-ultradark
+            }
+
+            .button-second{
+                @apply bg-white text-red-dark border border-red-dark hover:bg-red-ultradark hover:text-white hover:border-red-ultradark
+            }
+
+            .navbar ul li a, .button-first{
+                @apply transition-colors
+            }
+
+            header .navbar ul li a{
+                @apply hover:text-red-dark 
+            }
+
+            footer .navbar ul li a{
+                @apply hover:text-red-ultradark
+            }
+
+            .bg-swiper-button-navigation-icon {
+                @apply bg-[url('./src/icon/arrow-right-circle.svg')] 
+            }
+            .swiper-button-navigation{
+                @apply after:bg-no-repeat bg-cover
+            }
+
+            .bg-red-hard-light{
+                @apply bg-red-dark w-full h-full absolute top-0 left-0 opacity-90 mix-blend-darken z-10
+            }
+        }
+    </style>
+     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body class="bg-black text-white font-resamitz text-lg relative">
+   
+    <header class="text-white container flex justify-between items-center h-[6.5625rem]">
+        <a href="/portfolio/php/cloudaitech">
+            <img src="src/images/cloudaitech-logo.svg" alt="CloudAi Tech logo" class="w-auto h-[3.875rem] object-contain z-30">
+        </a>
+        <img src="src/icon/nav-mobile-menu-icon.svg" alt="CloudAi Tech - Menu mobile" class="w-auto h-5 object-contain ml-auto lg:hidden" onclick="openMenu()">
+        <img src="src/icon/close-icon.svg" alt="CloudAi Tech - Menu mobile Close" class="close navbar w-auto h-5 object-contain ml-auto" onclick="closeMenu()">
+        <nav class="navbar font-neuro text-base tracking-wide">
+            <ul class="gap-x-16 lg:flex">
+                <li>
+                    <a href="about-us">About Us</a>
+                </li>
+                <li>
+                    <a href="portfolio">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<article class="main-text container min-h-[43.4375rem] lg:min-h-[53.0625rem] flex flex-col items-center justify-center text-center">
+    <h2 class="heading-title-2xl mb-5">Blockchain Beyond Cryptocurrency: Transforming Industries</h2>
+    <p class="heading-text-xl">
+        Discover how blockchain technology extends far beyond cryptocurrencies, reshaping industries like finance, supply chain management, and voting systems, with its decentralized and transparent nature.
+    </p> 
+</article> <section class="text-image min-h-[25rem] relative lg:min-h-[48.625rem] flex items-center justify-center overflow-hidden flex-col-reverse mb-32 lg:mb-0 lg:flex-col">
+    <div class="grid grid-cols-12 container gap-y-3 z-20">
+        <div class="col-span-12 flex flex-col gap-y-3 lg:col-span-10 2xl:col-span-8">
+            <h3 class="uppercase heading-title-xxs text-gray">The Rise of 5G: Transforming Connectivity</h3>
+            <h2 class="heading-title-lg">Understanding the Implications of 5G Networks on Communication and Industry</h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6">
+            <p class="heading-text-xl mt-5">This article explores the emergence of 5G technology and its profound impact on communication, industry automation, and the development of smart cities, unlocking new levels of speed and connectivity</p>
+            <a href="" class="mt-5 button button-first">
+                Read more
+            </a>
+        </div>
+    </div>
+    <div class="w-full lg:w-4/5 h-full mb-[4.5625rem] lg:mb-0 lg:absolute lg:top-0 lg:right-0">
+        <img src="./src/images/background-red-dark.png" alt="Understanding the Implications of 5G Networks on Communication and Industry" class="opacity-90 absolute right-0 top-0 z-10 w-full h-[28.125rem] lg:h-full mix-blend-hard-light">
+        <img class="w-full h-[28.125rem] lg:h-full object-cover block" src="./src/images/understand-the-implications-of5g-networks.jpg" alt="Understanding the Implications of 5G Networks on Communication and Industry">
+    </div>
+</section><section class="image-text min-h-[25rem] relative lg:min-h-[48.625rem] flex items-center flex-col justify-center overflow-hidden mb-44 lg:mb-0">
+    <div class="w-full lg:w-[67%] h-full lg:absolute lg:top-0 lg:left-0 mb-[4.5625rem] lg:mb-0">
+        <img src="./src/images/background-red-dark-image-text.png" alt="Understanding the Implications of 5G Networks on Communication and Industry" class="opacity-90 absolute left-0 top-0 z-10 w-full h-[28.125rem] lg:h-full mix-blend-hard-light">
+        <img class="w-full h-[28.125rem] lg:h-full object-cover block" src="./src/images/navigating-the-complexities-of-securing.jpg" alt="Understanding the Implications of 5G Networks on Communication and Industry">
+    </div>
+    <div class="grid grid-cols-12 container z-20 gap-y-3">
+        <div class="col-span-12 lg:col-span-6">
+            <h3 class="uppercase heading-title-xxs text-gray">Cybersecurity in the Age of IoT: Safeguarding Connected Devices</h3>
+        </div>
+        <div class="col-span-12 flex flex-col lg:col-span-10 2xl:col-span-8">
+            <h2 class="heading-title-lg">Navigating the Complexities of Securing Internet-of-Things (IoT) Networks</h2>
+            <a href="" class="button button-first mt-5">
+                Read more
+            </a>
+        </div>
+    </div>
+</section><section class="container py-20 lg:py-[17.25rem]">
+    <h2 class="uppercase heading-title-md mb-20 text-center lg:mb-44">DEpositions</h2>
+    <div class="swiper depositions">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flex rounded-[1.875rem] pt-12 pb-10 px-12 relative overflow-hidden ">
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img src="./src/images/jane.png" alt="Jane Cooper - Depoimento" class="rounded-full w-56 h-56 object-cover mb-9">
+                    <h4 class="uppercase mb-2 heading-title-xs">Jane cooper</h4>
+                    <p class="heading-text-xl">Lorem Ipsum sub tex Lorem Ipsum sub tex. Lorem Ipsum sub tex Lorem Ipsum sub tex</p>
+                </div>
+                <div class="bg-red-hard-light">&nbsp;</div>
+                <img src="./src/images/depoimentos-1.jpg" alt="Jane cooper" class="absolute top-0 left-0 w-full h-full object-cover">
+            </div>
+
+            <div class="swiper-slide flex rounded-[1.875rem] pt-12 pb-10 px-12 relative overflow-hidden">
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img src="./src/images/wade.png" alt="Jane Cooper - Depoimento" class="rounded-full w-auto h-56 object-cover mb-9">
+                    <h4 class="uppercase mb-2 heading-title-xs">Wade Warren</h4>
+                    <p class="heading-text-xl">Lorem Ipsum sub tex Lorem Ipsum sub tex. Lorem Ipsum sub tex Lorem Ipsum sub tex</p>
+                </div>
+                <div class="bg-red-dark w-full h-full absolute top-0 left-0 opacity-90 mix-blend-hard-light z-10">&nbsp;</div>
+                <img src="./src/images/depoimentos-1.jpg" alt="Albert Flores" class="absolute top-0 left-0 w-full h-full object-cover">
+            </div>
+
+            <div class="swiper-slide flex rounded-[1.875rem] pt-12 pb-10 px-12 relative overflow-hidden">
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img src="./src/images/albert.png" alt="Albert flores - Depoimento" class="rounded-full w-auto h-56 object-cover mb-9">
+                    <h4 class="uppercase mb-2 heading-title-xs">Albert Flores</h4>
+                    <p class="heading-text-xl">Lorem Ipsum sub tex Lorem Ipsum sub tex. Lorem Ipsum sub tex Lorem Ipsum sub tex</p>
+                </div>
+                <div class="bg-red-dark w-full h-full absolute top-0 left-0 opacity-90 mix-blend-hard-light z-10">&nbsp;</div>
+                <img src="./src/images/depoimentos-1.jpg" alt="Jane cooper" class="absolute top-0 left-0 w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="swiper-button-prev w-11 h-11 after:!content-[''] after:swiper-button-navigation after:bg-swiper-button-navigation-icon  absolute after:w-full after:h-full after:rotate-180 xl:hidden"></div>
+        <div class="swiper-button-next w-11 h-11 after:!content-[''] after:swiper-button-navigation after:bg-swiper-button-navigation-icon  absolute after:w-full after:h-full xl:hidden"></div>
+    </div>
+</section> 
+    <footer class="text-white">
+        <div class="bg-red-dark pb-10 pt-8 lg:py-5">
+            <div class="container grid grid-cols-12 items-center">
+                <div class="col-span-12 lg:col-span-3">
+                    <a href="/">
+                        <img src="src/images/cloudaitech-logo.svg" alt="CloudAi Tech logo" class="w-[9.375rem] h-20 object-contain z-30">
+                    </a>
+                </div>
+                <div class="col-span-12 mt-10 lg:mt-0 lg:col-span-9">
+                    <nav class="navbar font-neuro text-base tracking-wide">
+                        <ul class="gap-y-5 lg:gap-y-0 lg:gap-x-16 flex flex-col lg:flex-row">
+                            <li>
+                                <a href="/about-us">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/services" class="cursor-not-allowed">Services</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio">Portfolio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-red-ultradark py-6">
+            <div class="container">
+                <h3 class="text-sm">
+                2024  - All rights reserved
+                </h3>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/js/swiper.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

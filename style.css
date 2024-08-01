@@ -185,7 +185,7 @@ header .button:hover,  header .social-icons a:hover img.hover, footer nav a:hove
 
 
 header h1, .photo, .popup-content{
-  color: #072236;
+  color: #0B3453;
 }
 
 .photo{
@@ -307,14 +307,12 @@ footer nav{
   background-color: #f9f9f9;
   padding: 25px;
   border-radius: 10px;
+  border: 1px solid #0B3453;
 }
 
 .popup-content .cases strong{
   font-weight: 900;
-}
-
-.popup-content .cases .subtitle{
-  text-transform: uppercase;
+  color: #0B3453;
 }
 
 .popup-content .icons{

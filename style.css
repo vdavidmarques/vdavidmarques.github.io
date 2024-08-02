@@ -172,6 +172,7 @@ header .button {
   border: none;
   cursor: pointer;
   transform: translateY(0);
+  text-decoration: none;
 }
 
 header .button:hover {

@@ -90,31 +90,28 @@ body {
   background-color: #f5f5f5;
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
+  width: 100%;
 }
+
 a{
   color: inherit;
 }
+
 .overflow-hidden{
     overflow: hidden;
 }
 
-main,
-foooter {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-column: span 12 / span 12;
-}
-
-header, nav, .photo {
-    grid-column: span 12 / span 12;
-}
-
-.container {  
+.content {
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  overflow: hidden;
+}
+
+
+html, .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;  
 }
 
 header {
@@ -224,7 +221,9 @@ footer nav a {
     margin: 0 0.625rem;
     text-decoration: none;
     gap: 0.625rem;
-    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 footer nav span{
@@ -238,15 +237,12 @@ footer nav a:hover{
   transition-duration: 150ms;
 }
 
-footer nav a, footer nav{
+footer nav{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
     row-gap: 1.25rem;
-}
-
-footer nav{
-    justify-content: center;
 }
 
 .popup {
@@ -365,49 +361,40 @@ footer nav{
 
 @media screen and (min-width:  640px) {
     .container {
-        max-width: 40rem;
+      max-width: 40rem;
+      width: 100%;
     }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container, 
+  .content {
     max-width: 48rem;
-  }
+  } 
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    min-height: 632px;
+  .content {
+    min-height: 39.5rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+    justify-content: space-between;
+
   }
 
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
+  html {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
-  header,
-  nav, .photo {
-    grid-column: span 10 / span 10;
-    grid-column-start: 2;
+  .content, .container {
+    max-width: 62.5rem;
   }
 
   .container {
-    max-width: 1024px;
-    padding: 2.5rem 40px 0 2.5rem;
     border-radius: 0.625rem;
   }
 
   footer{
     border-radius: 0 0 0.625rem 0.625rem;
-  }
-
-  footer nav{
-    gap: 5rem;
   }
 
   .popup {
@@ -421,39 +408,54 @@ footer nav{
     padding: 5rem;
   }
 
-  header, .photo{
+  .photo{
    padding-left: 0; 
    padding-right: 0;
   }
-
-  header, footer nav a, footer nav{
+  
+  header, footer nav{
     flex-direction: row;
     row-gap: 0;
   }  
 
   .cases{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 40px;
+    column-gap: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0;
-    max-width: 1280px;
   }
+  
+  .content, .container{
+    max-width: 1200px;
+  }
+
   .popup-content {
-    max-width: 1024px;
+    max-width: 64rem;
   }
-  .container { 
-    width: 100%;
+
+  footer nav{
+    column-gap: 1.25rem;
+  }
+
+  footer nav, header{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media screen and (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+  .container, .content {
+    max-width: 96rem;
   }
+  
+  footer nav{
+    column-gap: 2.5rem;
+  }
+
 }
 
 .scroll-effect {

@@ -212,6 +212,7 @@ footer {
   width: 100%;
   padding: 1.25rem 0;
   text-align: center; 
+  position: relative;
 }
 
 footer nav.menu-slider {
@@ -221,14 +222,14 @@ footer nav.menu-slider {
   justify-content: space-between;
   overflow-x: auto;
   scroll-behavior: smooth;
-  position: relative;
   padding: 0 50px;
+  column-gap: 40px;
 }
 
 .nav-button {
-  background-color: #ffffffc4;
+  background-color: #0B3453;
   border: none;
-  color: #0B3453;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
   position: fixed;
@@ -249,7 +250,6 @@ footer nav a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.125rem;
-    margin: 0 0.625rem;
     text-decoration: none;
     gap: 0.625rem;
     display: flex;

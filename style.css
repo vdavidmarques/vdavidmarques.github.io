@@ -112,6 +112,7 @@ html, .content {
   height: 100%;
   display: flex;
   flex-direction: column;  
+  overflow: hidden;
 }
 
 header {
@@ -132,7 +133,7 @@ header .title{
 
 header .social-icons {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
 
 header .social-icons img, header .social-icons a {
@@ -176,7 +177,7 @@ header .button:hover {
   background-color: #10568b;
 }
 
-header .button:hover,  header .social-icons a:hover img.hover, footer nav a:hover{
+header .button:hover,  header .social-icons a:hover img.hover, footer nav a.item:hover{
   animation: bounce 1s infinite;
 }
 
@@ -213,6 +214,36 @@ footer {
   text-align: center; 
 }
 
+footer nav.menu-slider {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  padding: 0 50px;
+}
+
+.nav-button {
+  background-color: #ffffffc4;
+  border: none;
+  color: #0B3453;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+}
+
+.nav-button#nav-left{
+  left: 0;
+}
+
+.nav-button#nav-right{
+  right: 0;
+}
+
 footer nav a {
     color: #fff;
     text-transform: uppercase;
@@ -230,20 +261,14 @@ footer nav span{
   transform: translateY(0.125rem);
 }
 
-footer nav a:hover{
+footer nav a.item:hover{
   color: #c4c4c4;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-footer nav{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 1.25rem;
-}
+
 
 .popup {
   position: fixed;
@@ -371,6 +396,9 @@ footer nav{
   .content {
     max-width: 48rem;
   } 
+  header .social-icons {
+    gap: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -413,10 +441,14 @@ footer nav{
    padding-right: 0;
   }
   
-  header, footer nav{
+  header{
     flex-direction: row;
     row-gap: 0;
   }  
+  
+  .nav-button{
+    display: none;
+  }
 
   .cases{
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -91,6 +91,7 @@ body {
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
 }
 
 a{
@@ -112,6 +113,7 @@ html, .content {
   height: 100%;
   display: flex;
   flex-direction: column;  
+  justify-content: space-between;
   overflow-x: hidden;
 }
 

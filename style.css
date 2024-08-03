@@ -415,6 +415,10 @@ footer nav a.item:hover{
     justify-content: center;
   }
 
+  body {
+    height: auto;
+  }
+
   .content, .container {
     max-width: 62.5rem;
   }

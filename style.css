@@ -162,17 +162,6 @@ header .social-icons a:hover img.hover, footer a:hover img.hover{
   }
 }
 
-@keyframes point {
-  0%, 100% {
-    transform: translateX(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateX(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
 header .button {
   background-color: #0B3453;
   border-radius: 0.625rem;
@@ -240,7 +229,7 @@ footer nav.menu-slider {
   color: #fff;
   font-size: 24px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   padding: 10px;
 }
@@ -251,15 +240,6 @@ footer nav.menu-slider {
 
 .nav-button#nav-right{
   right: 0;
-}
-
-.point-effect{
-  animation: point 1s infinite;
-  width: 30px;
-  height: 30px;
-  opacity: 0.7;
-  margin-left: auto;
-  margin-right: 20px;
 }
 
 footer nav a {
@@ -399,6 +379,10 @@ footer nav a.item:hover{
   cursor: pointer;
 }
 
+.experience p.description{
+  margin-top: 1.25rem;
+}
+
 @media screen and (min-width:  640px) {
     .container {
       max-width: 40rem;
@@ -465,7 +449,7 @@ footer nav a.item:hover{
     row-gap: 0;
   }  
   
-  .nav-button, .point-effect{
+  .nav-button{
     display: none;
   }
 

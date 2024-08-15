@@ -458,7 +458,7 @@ footer nav a.item:hover{
     column-gap: 2.5rem;
   }
   
-  header .button:hover,  header .social-icons a:hover img.hover, footer nav a.item:hover{
+  header .button:hover,  header .social-icons a:hover img.hover{
     animation: bounce 1s infinite;
   }
 }

@@ -1,0 +1,75 @@
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
+
+footer {
+  background-color: $blue-dark;
+  width: 100%;
+  padding: 1.25rem 0;
+  text-align: center;
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    nav {
+      column-gap: 1.25rem;
+    }
+
+    footer nav,
+    header {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-2xl) {
+    footer nav {
+      column-gap: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  footer nav,
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+footer nav.menu-slider {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 50px;
+  column-gap: 40px;
+}
+
+footer nav a {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  gap: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer nav span {
+  transform: translateY(0.125rem);
+}
+
+footer nav a.item:hover {
+  color: $gray-light;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

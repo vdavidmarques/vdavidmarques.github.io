@@ -1,0 +1,23 @@
+@import "../../helpers/variables.scss";
+@import "../../helpers/mixins.scss";
+
+.photo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9.375rem 1rem;
+}
+
+.photo .title{
+  font-size: 2.625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.photo .subtitle{
+  font-size: 1.875rem;
+}
+
+.photo .subtitle, .popup-content .title {
+  font-weight: 600;
+  text-transform: uppercase;
+}

@@ -1,0 +1,97 @@
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  flex-direction: column;
+  row-gap: 1.25rem;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    flex-direction: row;
+    row-gap: 0;
+  }
+
+  .button:hover,
+  .social-icons a:hover img.hover {
+    animation: bounce 1s infinite;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1.25rem;
+
+    @media screen and (min-width: $breakpoint-md) {
+      gap: 2.5rem;
+    }
+
+    img,
+    a {
+      width: 2.8125rem;
+      height: 2.8125rem;
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    font-size: 2.375rem;
+  }
+
+  .button {
+    background-color: $blue-dark;
+    border-radius: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(0);
+    text-decoration: none;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+header .social-icons a:hover img.not-hover,
+header .social-icons img.hover,
+footer a:hover img.not-hover,
+footer img.hover {
+  display: none;
+}
+
+header .social-icons a:hover img.hover,
+footer a:hover img.hover {
+  display: block;
+}
+
+header h1,
+.photo,
+.popup-content {
+  color: $blue-dark;
+}
+
+.nav-button {
+  background-color: $blue-dark;
+  border: none;
+  color: $white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+}
+
+.nav-button#nav-left {
+  left: 0;
+}
+
+.nav-button#nav-right {
+  right: 0;
+}

@@ -1,0 +1,213 @@
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  @media screen and (min-width: $breakpoint-lg) {
+    justify-content: center;
+  }
+}
+
+body {
+  background-color: $gray-ultralight;
+  font-family: $font-rubik;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    height: auto;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 40rem;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    border-radius: 0.625rem;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.container,
+.content {
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 48rem;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 62.5rem;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 75rem;
+  }
+
+  @media screen and (min-width: $breakpoint-2xl) {
+    max-width: 96rem;
+  }
+}
+
+.content {
+  background-color: $white;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    min-height: 39.5rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+}
+
+html,
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    justify-content: center;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(1, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-15%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.scroll-effect {
+  opacity: 0;
+  transform: translateY(3.125rem);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-effect.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 1024px) {
+  .photo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav-button {
+    display: none;
+  }
+}
+
+.experience p.description{
+  margin-top: 1.25rem;
+}

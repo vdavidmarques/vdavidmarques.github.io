@@ -9,6 +9,15 @@ Este é o código-fonte de um site de portfólio pessoal, desenvolvido com HTML5
 - `script.js`: Arquivo JavaScript para manipulação de eventos e popups.
 - `popup-content.html`: Arquivo HTML externo contendo o conteúdo dos popups.
 
-## Instruções para Execução
+ It is built using the following technologies:
 
-Para evitar problemas de CORS ao carregar o conteúdo dos popups, é necessário executar o projeto em um servidor web local.
+- [SASS](https://sass-lang.com/)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [JavaScript](https://www.javascript.com/)
+
+## Installation and Setup
+```bash
+npm install
+
+```bash
+npm run start

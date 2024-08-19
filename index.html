@@ -91,8 +91,8 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <main class="content">
-      <div class="container">
+    <main class="content container">
+      <div class="layout">
         <header>
           <h1 class="title scroll-effect">Portfólio</h1>
           <div class="social-icons">
@@ -200,107 +200,113 @@
             >Download CV</a
           >
         </header>
-      </div>      
-      <section class="photo scroll-effect">
-        <h2 class="title">Vinícius Marques</h2>
-        <h3 class="subtitle">Desenvolvedor frontend/UI designer</h3>
-      </section>
-    
-      <footer>
-        <div class="container">
-          <nav class="menu-slider">
-            <a class="nav-button" id="nav-left">&lt;</a>
-            <a class="item" href="#about">
-              <img
-                src="library/icons/sobre.svg"
-                width="40"
-                height="40"
-                alt="About"
-                class="not-hover"
-              />
-              <img
-                src="library/icons/sobre-2.svg"
-                width="40"
-                height="40"
-                alt="About"
-                class="hover"
-              />
-              <span> Sobre </span>
-            </a>
-            <a class="item" href="#experience">
-              <img
-                src="library/icons/experiencia.svg"
-                width="40"
-                height="40"
-                alt="experience"
-                class="not-hover"
-              />
-              <img
-                src="library/icons/experiencia-2.svg"
-                width="40"
-                height="40"
-                alt="experience"
-                class="hover"
-              />
-              <span> Experiência </span>
-            </a>
-            <a class="item" href="#skills">
-              <img
-                src="library/icons/habilidades.svg"
-                width="40"
-                height="40"
-                alt="experience"
-                class="not-hover"
-              />
-              <img
-                src="library/icons/habilidades-2.svg"
-                width="40"
-                height="40"
-                alt="experience"
-                class="hover"
-              />
-              <span>
-                Habilidades
-              </span>
-            </a>
-            <a class="item" href="#portfolio">
-              <img
-                src="library/icons/portfolio.svg"
-                width="40"
-                height="40"
-                alt="portfolio"
-                class="not-hover"
-              />
-              <img
-                src="library/icons/portfolio-2.svg"
-                width="40"
-                height="40"
-                alt="portfolio"
-                class="hover"
-              />
-              <span> Portfólio </span>
-            </a>
-            <a class="item" href="#contact">
-              <img
-                src="library/icons/contato.svg"
-                width="40"
-                height="40"
-                alt="Contact"
-                class="not-hover"
-              />
-              <img
+            
+        <section class="photo scroll-effect">
+          <h2 class="title">Vinícius Marques</h2>
+          <h3 class="subtitle">Desenvolvedor frontend/UI designer</h3>
+        </section>
+      
+        <footer>
+          <div class="container">
+            <div class="open-menu-mobile">
+              <button onclick="openMenu()" class="bg-menu-mobile">Menu</button>              
+            </div>
+            <nav class="menu-slider">
+              <a class="item" href="#about">
+                <img
+                  src="library/icons/sobre.svg"
+                  width="40"
+                  height="40"
+                  alt="About"
+                  class="desktop"
+                />
+                <img
+                  src="library/icons/sobre-2.svg"
+                  width="40"
+                  height="40"
+                  alt="About"
+                  class="mobile"
+                />
+                <span> Sobre </span>
+              </a>
+              <a class="item" href="#experience">
+                <img
+                  src="library/icons/experiencia.svg"
+                  width="40"
+                  height="40"
+                  alt="experience"
+                  class="desktop"
+                />
+                <img
+                  src="library/icons/experiencia-2.svg"
+                  width="40"
+                  height="40"
+                  alt="experience"
+                  class="mobile"
+                />
+                <span> Experiência </span>
+              </a>
+              <a class="item" href="#skills">
+                <img
+                  src="library/icons/habilidades.svg"
+                  width="40"
+                  height="40"
+                  alt="experience"
+                  class="desktop"
+                />
+                <img
+                  src="library/icons/habilidades-2.svg"
+                  width="40"
+                  height="40"
+                  alt="experience"
+                  class="mobile"
+                />
+                <span>
+                  Habilidades
+                </span>
+              </a>
+              <a class="item" href="#portfolio">
+                <img
+                  src="library/icons/portfolio.svg"
+                  width="40"
+                  height="40"
+                  alt="portfolio"
+                  class="desktop"
+                />
+                <img
+                  src="library/icons/portfolio-2.svg"
+                  width="40"
+                  height="40"
+                  alt="portfolio"
+                  class="mobile"
+                />
+                <span> Portfólio </span>
+              </a>
+              <a class="item" href="#contact">
+                <img
+                  src="library/icons/contato.svg"
+                  width="40"
+                  height="40"
+                  alt="Contact"
+                  class="desktop"
+                /> 
+                <img
                 src="library/icons/contato-2.svg"
                 width="40"
                 height="40"
                 alt="Contact"
-                class="hover"
+                class="mobile"
               />
-              <span> Contato </span>
-            </a>
-            <a class="nav-button" id="nav-right">&gt;</a>
-          </nav>
-        </div>
-      </footer>
+                <span> Contato </span>
+              </a>
+              <a onclick="closeMenu()" class="bg-close-menu-mobile">
+                Fechar menu
+              </a>
+            </nav>
+            
+          </div>
+        </footer>
+      </div>
     </main>
     <script src="library/js/scripts.min.js"></script>
   </body>

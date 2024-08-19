@@ -5,13 +5,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 1rem;
   flex-direction: column;
   row-gap: 1.25rem;
-
+  
   @media screen and (min-width: $breakpoint-lg) {
     flex-direction: row;
     row-gap: 0;
+    column-gap: 1.25rem;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    column-gap: 2.5rem;
+  }
+
+  @media screen and (min-width: $breakpoint-1_5xl) {
+    column-gap: 5rem;
   }
 
   .button:hover,
@@ -35,10 +43,13 @@ header {
   }
 
   .title {
-    text-transform: uppercase;
-    font-weight: 800;
+    font-family: $font-pacifico;
     margin: 0;
     font-size: 2.375rem;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 3.125rem;
+    }
   }
 
   .button {
@@ -75,23 +86,4 @@ header h1,
 .photo,
 .popup-content {
   color: $blue-dark;
-}
-
-.nav-button {
-  background-color: $blue-dark;
-  border: none;
-  color: $white;
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  padding: 10px;
-}
-
-.nav-button#nav-left {
-  left: 0;
-}
-
-.nav-button#nav-right {
-  right: 0;
 }

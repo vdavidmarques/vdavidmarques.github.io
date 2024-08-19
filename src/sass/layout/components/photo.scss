@@ -5,19 +5,24 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 9.375rem 1rem;
-}
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+    font-family: $font-pacifico;
 
-.photo .title{
-  font-size: 2.625rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-.photo .subtitle{
-  font-size: 1.875rem;
-}
-
-.photo .subtitle, .popup-content .title {
-  font-weight: 600;
-  text-transform: uppercase;
+    @media screen and (min-width: $breakpoint-lg){
+      width: 100%;
+      padding: 0;
+    }
+        
+    .title{
+      font-size: 2.5rem;
+      
+      @media screen and (min-width: $breakpoint-md){
+        font-size: 3.875rem;
+      }
+    }
+    
+    .subtitle{
+      font-size: 1.875rem;
+    }
 }

@@ -2,26 +2,8 @@
 @import "../helpers/mixins.scss";
 
 footer {
-  background-color: $blue-dark;
-  width: 100%;
-  padding: 1.25rem 0;
-  text-align: center;
-  position: relative;
-
   @media screen and (min-width: $breakpoint-lg) {
     border-radius: 0 0 0.625rem 0.625rem;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
-    nav {
-      column-gap: 1.25rem;
-    }
-
-    footer nav,
-    header {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
   }
 
   @media screen and (min-width: $breakpoint-2xl) {
@@ -29,47 +11,117 @@ footer {
       column-gap: 2.5rem;
     }
   }
-}
+  .open-menu-mobile {
+    float: right;
 
-@media screen and (min-width: $breakpoint-lg) {
-  footer nav,
-  header {
-    padding-left: 40px;
-    padding-right: 40px;
+    @media screen and (min-width: $breakpoint-lg) {
+      display: none;
+    }
+
+    .bg-menu-mobile {
+      background-image: url("../../library/icons/menu-icon.svg");
+      text-indent: -624.9375rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      position: absolute;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      overflow: hidden;
+      width: 2.5rem;
+      height: 2.5rem;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 3.75rem;
+        height: 3.75rem;
+      }
+    }
   }
-}
 
-footer nav.menu-slider {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 0 50px;
-  column-gap: 40px;
-}
+  nav.menu-slider {
+    display: none;
+    overflow-x: auto;
+    
+    @media screen and (min-width: $breakpoint-lg) {
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      overflow: hidden;
+      column-gap: 2.5rem;
+    }
 
-footer nav a {
-  color: $white;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-decoration: none;
-  gap: 0.625rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+    a.item {
+      color: $blue-dark;
+      font-size: 1.5rem;
+      text-decoration: none;
+      gap: 0.625rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $font-pacifico;
+      position: relative;
 
-footer nav span {
-  transform: translateY(0.125rem);
-}
+      .desktop {
+        display: none;
+        @media screen and (min-width: $breakpoint-lg) {
+          display: block;
+        }
+      }
 
-footer nav a.item:hover {
-  color: $gray-light;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+      .mobile {
+        @media screen and (min-width: $breakpoint-lg) {
+          display: none;
+        }
+      }
+    }
+
+    span {
+      transform: translateY(0.125rem);
+    }
+
+    &.openned {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      background-color: $blue-dark;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      z-index: 50;
+      row-gap: 80px;
+      justify-content: center;
+
+      a.item {
+        color: $white;
+      }
+    }
+  }
+
+  .bg-close-menu-mobile {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding-left: 1.5rem;
+    text-indent: -624.9375rem;
+    border: none;
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-image: url("../../library/icons/close-menu-icon.svg");
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      display: none;
+    }
+  }
+
 }

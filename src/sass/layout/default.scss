@@ -90,22 +90,25 @@ video {
   vertical-align: baseline;
 }
 
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 html {
+  display: flex;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
   @media screen and (min-width: $breakpoint-lg) {
     justify-content: center;
   }
 }
 
 body {
-  background-color: $gray-ultralight;
+  background-color: $green-light;
   font-family: $font-rubik;
-  box-sizing: border-box;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    height: auto;
-  }
 }
 
 a {
@@ -117,59 +120,93 @@ a {
 }
 
 .container {
-  max-width: 40rem;
+  padding: 0 16px;
   width: 100%;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    border-radius: 0.625rem;
-  }
-
-  @media screen and (min-width: $breakpoint-xl) {
-    .container {
-      padding: 0;
-    }
-  }
+  @include mx-auto;
 }
 
 .container,
 .content {
+  @media screen and (min-width: $breakpoint-sm) {
+    max-width: $breakpoint-sm;
+  }
+
   @media screen and (min-width: $breakpoint-md) {
-    max-width: 48rem;
+    max-width: $breakpoint-md;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    max-width: 62.5rem;
-  }
-
-  @media screen and (min-width: $breakpoint-xl) {
-    max-width: 75rem;
-  }
-
-  @media screen and (min-width: $breakpoint-2xl) {
-    max-width: 96rem;
+    padding: 0 2.5rem;
+    max-width: 100%;
   }
 }
 
 .content {
-  background-color: $white;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  background-image: url("../../library/images/notebook.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  overflow: hidden;
+  background-position-y: 46px;
+  background-position-x: -10px;
+  height: 100%;
 
   @media screen and (min-width: $breakpoint-lg) {
-    min-height: 39.5rem;
-    border-radius: 0.625rem 0.625rem 0 0;
+    background-position-y: initial;
+    background-position-x: initial;
+  }
+
+  &::before {
+    content: "";
+    background-size: contain;
+    background-image: url("../../library/icons/brochure-mobile.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    pointer-events: none;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      background-size: cover;
+      background-image: url("../../library/icons/brochure.svg");
+      width: 108px;
+      left: -3.125rem;
+    }
+  }
+
+  .layout {
+    padding-top: 9.375rem;
+    padding-left: 3.125rem;
+    padding-right: 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    @media screen and (min-width: $breakpoint-md) {
+      padding-top: 15.625rem; 
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      @include col-span-9;
+      @include col-start-3;
+      padding: 0;
+      min-height: 100vh;
+    }
+  }
+
+  &.menu-mobile-openned{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
   }
 }
 
 html,
 .content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-x: hidden;
-
   @media screen and (min-width: $breakpoint-lg) {
+    align-items: center;
     justify-content: center;
   }
 }
@@ -197,17 +234,16 @@ html,
   transform: translateY(0);
 }
 
-@media screen and (min-width: 1024px) {
-  .photo {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .nav-button {
-    display: none;
-  }
+.experience p.description {
+  margin-top: 1.25rem;
 }
 
-.experience p.description{
-  margin-top: 1.25rem;
+.highlighter{
+  background-image: url("../../library/icons/highlighter.svg");
+  background-size: cover;
+  width: 188px;
+  height: 155px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

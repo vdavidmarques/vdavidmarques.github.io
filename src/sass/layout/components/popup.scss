@@ -45,12 +45,17 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 0.625rem;
+    font-family: $font-pacifico;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 40px;
+    }
   }
 
   .subtitle {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
   }

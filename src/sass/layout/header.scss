@@ -40,6 +40,16 @@ header {
       width: 2.8125rem;
       height: 2.8125rem;
     }
+
+    .language{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $blue;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+    }
   }
 
   .title {

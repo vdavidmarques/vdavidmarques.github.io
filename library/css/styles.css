@@ -413,6 +413,15 @@ header .social-icons a {
   width: 2.8125rem;
   height: 2.8125rem;
 }
+header .social-icons .language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10568b;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
 header .title {
   font-family: "Pacifico", cursive;
   margin: 0;

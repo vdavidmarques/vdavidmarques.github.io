@@ -39,45 +39,50 @@ footer {
     }
   }
 
-  .menu-slider {
+  .main-menu-footer {
     display: none;
     overflow-x: auto;
     
     @media screen and (min-width: $breakpoint-lg) {
+      overflow: hidden;
+      display: block;
+    }
+    
+    nav.items{
       align-items: center;
       justify-content: space-between;
       display: flex;
-      overflow: hidden;
       column-gap: 2.5rem;
-    }
+      flex-direction: row;
 
-    a.item {
-      color: $blue-dark;
-      font-size: 1.5rem;
-      text-decoration: none;
-      gap: 0.625rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: $font-pacifico;
-      position: relative;
-
-      .desktop {
-        display: none;
-        @media screen and (min-width: $breakpoint-lg) {
-          display: block;
-        }
-      }
-
-      .mobile {
-        @media screen and (min-width: $breakpoint-lg) {
+      a.item {
+        color: $blue-dark;
+        font-size: 1.5rem;
+        text-decoration: none;
+        gap: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font-pacifico;
+        position: relative;
+  
+        .desktop {
           display: none;
+          @media screen and (min-width: $breakpoint-lg) {
+            display: block;
+          }
+        }
+  
+        .mobile {
+          @media screen and (min-width: $breakpoint-lg) {
+            display: none;
+          }
         }
       }
-    }
 
-    span {
-      transform: translateY(0.125rem);
+      span {
+        transform: translateY(0.125rem);
+      }
     }
 
     &.openned {
@@ -92,17 +97,21 @@ footer {
       left: 0;
       z-index: 50;
       
-      a.item {
-        color: $white;
-      }
-
-      nav{
+      
+      nav.items{
         display: flex;
         flex-direction: column;
         row-gap: 30px;
         align-items: center;
+        
+        a.item {
+          color: $white;
+        }
       }
     }
+
+
+
   }
 
   .bg-close-menu-mobile {

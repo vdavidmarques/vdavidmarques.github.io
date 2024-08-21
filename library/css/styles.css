@@ -228,7 +228,7 @@ a {
   display: grid;
   overflow: hidden;
   background-position-y: 46px;
-  background-position-x: -10px;
+  background-position-x: -60px;
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -257,8 +257,6 @@ a {
 }
 .content .layout {
   padding-top: 9.375rem;
-  padding-left: 3.125rem;
-  padding-right: 0.625rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -497,12 +495,12 @@ footer .open-menu-mobile .bg-menu-mobile {
     height: 3.75rem;
   }
 }
-footer nav.menu-slider {
+footer .menu-slider {
   display: none;
   overflow-x: auto;
 }
 @media screen and (min-width: 1024px) {
-  footer nav.menu-slider {
+  footer .menu-slider {
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -510,7 +508,7 @@ footer nav.menu-slider {
     column-gap: 2.5rem;
   }
 }
-footer nav.menu-slider a.item {
+footer .menu-slider a.item {
   color: #0b3453;
   font-size: 1.5rem;
   text-decoration: none;
@@ -521,25 +519,26 @@ footer nav.menu-slider a.item {
   font-family: "Pacifico", cursive;
   position: relative;
 }
-footer nav.menu-slider a.item .desktop {
+footer .menu-slider a.item .desktop {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  footer nav.menu-slider a.item .desktop {
+  footer .menu-slider a.item .desktop {
     display: block;
   }
 }
 @media screen and (min-width: 1024px) {
-  footer nav.menu-slider a.item .mobile {
+  footer .menu-slider a.item .mobile {
     display: none;
   }
 }
-footer nav.menu-slider span {
+footer .menu-slider span {
   transform: translateY(0.125rem);
 }
-footer nav.menu-slider.openned {
+footer .menu-slider.openned {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   background-color: #0b3453;
@@ -547,11 +546,15 @@ footer nav.menu-slider.openned {
   height: 100%;
   left: 0;
   z-index: 50;
-  row-gap: 80px;
-  justify-content: center;
 }
-footer nav.menu-slider.openned a.item {
+footer .menu-slider.openned a.item {
   color: #fff;
+}
+footer .menu-slider.openned nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
 }
 footer .bg-close-menu-mobile {
   background-size: contain;
@@ -684,6 +687,11 @@ footer .bg-close-menu-mobile {
   align-items: center;
   column-gap: 0.625rem;
   margin-bottom: 0.3125rem;
+}
+.popup-content .portfolio .cases {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .photo {

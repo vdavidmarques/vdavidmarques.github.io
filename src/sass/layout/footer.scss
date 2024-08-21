@@ -39,7 +39,7 @@ footer {
     }
   }
 
-  nav.menu-slider {
+  .menu-slider {
     display: none;
     overflow-x: auto;
     
@@ -82,7 +82,8 @@ footer {
 
     &.openned {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 0;
       background-color: $blue-dark;
@@ -90,11 +91,16 @@ footer {
       height: 100%;
       left: 0;
       z-index: 50;
-      row-gap: 80px;
-      justify-content: center;
-
+      
       a.item {
         color: $white;
+      }
+
+      nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
       }
     }
   }

@@ -112,4 +112,10 @@
     column-gap: 0.625rem;
     margin-bottom: 0.3125rem;
   }
+
+  .portfolio .cases{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }

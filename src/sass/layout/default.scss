@@ -149,7 +149,7 @@ a {
   display: grid;
   overflow: hidden;
   background-position-y: 46px;
-  background-position-x: -10px;
+  background-position-x: -60px;
   height: 100%;
 
   @media screen and (min-width: $breakpoint-lg) {
@@ -177,8 +177,6 @@ a {
 
   .layout {
     padding-top: 9.375rem;
-    padding-left: 3.125rem;
-    padding-right: 0.625rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

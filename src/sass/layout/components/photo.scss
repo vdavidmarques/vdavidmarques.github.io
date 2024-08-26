@@ -7,7 +7,9 @@
     margin-right: auto;
     padding-top: 9.375rem;
     padding-bottom: 9.375rem;
-    font-family: $font-pacifico;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width: $breakpoint-lg){
       padding: 0;
@@ -15,6 +17,8 @@
         
     .title{
       font-size: 2.5rem;
+      font-family: $font-pacifico;
+
       
       @media screen and (min-width: $breakpoint-md){
         font-size: 3.875rem;
@@ -23,5 +27,13 @@
     
     .subtitle{
       font-size: 1.875rem;
+      font-family: $font-pacifico;
+    }
+
+    .text{
+      max-width: 21.875rem;
+      font-size: 1.125rem;
+      margin-top: 1rem;
+      font-weight: 600;
     }
 }

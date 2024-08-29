@@ -63,6 +63,10 @@
   ul {
     margin: 1.25rem;
     line-height: 1.5625rem;
+
+    li strong{
+      font-weight: 700;
+    }
   }
 
   .infos {

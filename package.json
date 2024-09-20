@@ -1,15 +1,16 @@
 {
-  "name": "baixadawebstudio",
+  "name": "vdavidmarques",
   "version": "1.0.0",
   "scripts": {
     "sass-watch": "sass --watch src/sass/styles.scss:library/css/styles.css",
     "gulp": "gulp",
-    "start": "npm-run-all --parallel sass-watch gulp"
+    "start": "concurrently \"php -S localhost:8000\" \"gulp\""
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "concurrently": "^9.0.1",
     "css-loader": "^7.1.1",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",

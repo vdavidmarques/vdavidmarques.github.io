@@ -18,5 +18,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('library/js')); // Pasta de destino dos arquivos minificados
 });
 
+// Tarefa para monitorar mudanças
+gulp.task('watch', function() {
+    gulp.watch('src/sass/**/*.scss', gulp.series('styles'));
+    gulp.watch('src/js/**/*.js', gulp.series('scripts'));
+});
+
 // Tarefa padrão para rodar as tarefas styles e scripts
-gulp.task('default', gulp.parallel('styles', 'scripts'));
+gulp.task('default', gulp.parallel('styles', 'scripts', 'watch'));

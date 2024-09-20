@@ -1,0 +1,24 @@
+{
+  "main-card": {
+    "tag": "website wordpress",
+    "title": "Consultoria Vida Segura",
+    "description": "Site oficial de produtos e serviços da Consultoria Vida Segura. Seguros, Planos de Saúde e consórcio. Adaptados às necessidades específicas do cliente.",
+    "image": "consultoria-vida-segura.jpg",
+    "cta-label": "acesse o site",
+    "cta-link": "https://consultoriavidasegura.com",
+    "github": "https://github.com/vdavidmarques/consultoria-vida-segura"
+  },
+  "skill":{
+    "title": "Desenvolvedor front-end",
+    "skills-title": "Competências",
+    "skills": [
+        "Websites em Wordpress;",
+        "Criação de Landing Page;",
+        "Design responsivo;",
+        "Designs com alta fidelidade;",
+        "Redesign de websites;",
+        "Otimização de desempenho;",
+        "UX & UI."
+    ]
+  }
+}

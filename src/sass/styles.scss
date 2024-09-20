@@ -1,4 +1,5 @@
 @import "helpers/mixins";
+@import "helpers/placeholder";
 @import "helpers/variables";
 @import "helpers/buttons";
 @import "helpers/heading-title";
@@ -7,6 +8,4 @@
 @import "layout/header";
 @import "layout/footer";
 
-@import "layout/components/popup";
-@import "layout/components/photo";
-
+@import "layout/components/top-content";

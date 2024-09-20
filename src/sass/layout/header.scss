@@ -2,98 +2,69 @@
 @import "../helpers/mixins.scss";
 
 header {
-  display: flex;
-  justify-content: space-between;
+  @include col-span-12;
+  display: grid;
   align-items: center;
-  flex-direction: column;
-  row-gap: 1.25rem;
+  @include grid-cols-12;
+  row-gap: 1.875rem;
   
-  @media screen and (min-width: $breakpoint-lg) {
-    flex-direction: row;
-    row-gap: 0;
-    column-gap: 1.25rem;
+  @media screen and (min-width: $breakpoint-sm) {
+    row-gap: inherit;
   }
-
-  @media screen and (min-width: $breakpoint-xl) {
-    column-gap: 2.5rem;
-  }
-
-  @media screen and (min-width: $breakpoint-1_5xl) {
-    column-gap: 5rem;
-  }
-
-  .button:hover,
-  .social-icons a:hover img.hover {
-    animation: bounce 1s infinite;
-  }
-
-  .social-icons {
-    display: flex;
-    gap: 1.25rem;
-
-    @media screen and (min-width: $breakpoint-md) {
-      gap: 2.5rem;
+  
+  .title{
+    font-size: 2.25rem;
+    text-align: center;
+    @include col-span-12;
+    
+    @media screen and (min-width: $breakpoint-sm) {
+      @include col-span-6;
+      text-align: left;
     }
 
-    img,
-    a {
-      width: 2.8125rem;
-      height: 2.8125rem;
+    @media screen and (min-width: $breakpoint-lg) {
+      @include col-span-7;
+    }
+  }
+
+  .navbar{
+    display: none;
+    @media screen and (min-width: $breakpoint-lg) {
+      display: block;
+      @include col-span-3;
     }
 
-    .language{
+    .list{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $blue;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
+      flex-direction: row;
+      justify-content: end;
+      column-gap: 1.25rem;
     }
   }
 
-  .title {
-    font-family: $font-pacifico;
-    margin: 0;
-    font-size: 2.375rem;
-
-    @media screen and (min-width: $breakpoint-md) {
-      font-size: 3.125rem;
+  .download{
+    @include col-span-12;
+    text-align: center;
+    
+    @media screen and (min-width: $breakpoint-sm) {
+      text-align: right;
+      @include col-span-6;
     }
-  }
-
-  .button {
-    background-color: $blue-dark;
-    border-radius: 0.625rem;
-    padding: 0.625rem 1.25rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: $white;
-    border: none;
-    cursor: pointer;
-    transform: translateY(0);
-    text-decoration: none;
-
-    &:hover {
+    
+    @media screen and (min-width: $breakpoint-lg) {
+      @include col-span-2;
+    }
+    
+    .button{
       background-color: $blue;
+      color: $blue-dark;
+      border-radius: 0.625rem;
+
+      &:hover{
+          background-color: $blue-dark;
+          color: $gray-light;
+          @include transition-colors;
+      }
     }
   }
-}
-
-header .social-icons a:hover img.not-hover,
-header .social-icons img.hover,
-footer a:hover img.not-hover,
-footer img.hover {
-  display: none;
-}
-
-header .social-icons a:hover img.hover,
-footer a:hover img.hover {
-  display: block;
-}
-
-header h1,
-.photo,
-.popup-content {
-  color: $blue-dark;
 }

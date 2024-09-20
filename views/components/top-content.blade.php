@@ -3,7 +3,7 @@
     $content = json_decode($jsonContent, true);
 @endphp
 
-<section class="top-content">
+<section class="top-content portfolio">
     <article class="main-card">
         <div class="contents">
             <div class="thumbnail">
@@ -21,7 +21,7 @@
                         {{ $content['main-card']['description'] }}
                     </p>
                     <div class="links">
-                        <a href="{{ $content['main-card']['github'] }}" target="_blank" class="icon github"></a>
+                        <a href="{{ $content['main-card']['github'] }}" target="_blank" class="icon github white"></a>
                         <a href="{{ $content['main-card']['cta-link'] }}" target="_blank" rel="noopener noreferrer" class="button read-more white">
                             {{ $content['main-card']['cta-label'] }}
                         </a>

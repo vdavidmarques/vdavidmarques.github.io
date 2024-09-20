@@ -14,7 +14,7 @@
   <div class="download">
     <a
       href="library/docs/curiculo-vdavidmarques-sao-paulo.pdf"
-      class="button scroll-effect"
+      class="button scroll-effect download"
       target="_blank"
       >Download CV</a
     >

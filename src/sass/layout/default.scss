@@ -173,17 +173,46 @@ img{
 }
 
 .icon{
-  border-radius: 9999px;
-  padding: 0.3125rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   
   &.github{
-    width: 1.875rem;
-    height: 1.875rem;
-    background: url('../icons/github-white.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    &.white{
+      background-image: url('../icons/github-white.svg');
+    }
+
+    &.blue{
+      background-image: url('../icons/github.svg');
+    }
   }
+
+  &.behance{
+
+    &.white{
+      background-image: url('../icons/behance-white.svg');
+    }
+
+    &.blue{
+      background-image: url('../icons/behance.svg');
+    }
+  }
+
+  
+  &.figma{
+
+    &.white{
+      background-image: url('../icons/figma-white.svg');
+    }
+
+    &.blue{
+      background-image: url('../icons/figma.svg');
+    }
+  }
+
 }
 
 .tag{

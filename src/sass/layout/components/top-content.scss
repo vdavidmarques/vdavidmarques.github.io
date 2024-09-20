@@ -2,82 +2,47 @@
 @import "../../helpers/mixins.scss";
 
 
-.top-content{
+.top-content.portfolio{
     display: grid;
     @include grid-cols-12;
-    row-gap: 2.5rem;
     
     @media (min-width: $breakpoint-xl){
         row-gap: 0;
-        column-gap: 1.25rem;
     }
-    
+
     .main-card{
         @include col-span-12;
+
         @media (min-width: $breakpoint-xl){
             @include col-span-8;
         }
 
+        @media (min-width: $breakpoint-2xl){
+            @include col-span-9;
+        }
+
         .contents{
-            display: grid;
             background-color: $blue-dark;
             color: $gray-light;
-            @include grid-cols-12;
-            border-radius: 1.25rem;
+          
             
             @media (min-width: $breakpoint-lg){
                 @include grid-cols-8;
-                @include border-radius;
             }
-
+            
             .thumbnail{
-                @include col-span-12;
-                overflow: hidden;
-                border-radius: 1.25rem 1.25rem 0 0;
-                
                 @media (min-width: $breakpoint-lg){
-                    @include border-radius;
                     @include col-span-5;
-                }
-                
-                img{
-                    width: 100%;
-                    height: 100%;
                 }
             }
 
             .content{
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                justify-items: center;
-                @include col-span-12;
-                @media (min-width: $breakpoint-lg){
-                    @include col-span-3;
-                }
-
+               
                 .texts{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    height: 100%;
-                    row-gap: 1.25rem;
 
                     .tag{
                         background-color: $gray-light;
                         color: $blue-dark;
-                    }
-
-                    .title{
-                        text-transform: uppercase;
-                        font-size: 1.25rem;
-                    }
-
-                    .links{
-                        display: flex;
-                        flex-direction: row;
-                        column-gap: 1.25rem;
-                        align-items: center;
                     }
                 }
             }
@@ -97,6 +62,10 @@
             flex-direction: column;
             justify-content: center;
             border-radius: 1.25rem;
+        }
+
+        @media (min-width: $breakpoint-2xl){
+            @include col-span-3;
         }
 
         .title{

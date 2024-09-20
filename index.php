@@ -9,4 +9,10 @@ $cache = __DIR__ . '/cache';
 
 $blade = new BladeOne($views, $cache, BladeOne::MODE_AUTO);
 
-echo $blade->run("home");
+$page = $_GET['page'] ?? 'home'; 
+
+if ($page === 'en') {
+    echo $blade->run('en');
+} else {
+    echo $blade->run('home');
+}

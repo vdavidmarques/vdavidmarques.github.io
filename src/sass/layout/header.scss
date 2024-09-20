@@ -6,39 +6,40 @@ header {
   display: grid;
   align-items: center;
   @include grid-cols-12;
-  row-gap: 1.875rem;
+  row-gap: 1.25rem;
   
-  @media screen and (min-width: $breakpoint-sm) {
-    row-gap: inherit;
+  @media screen and (min-width: $breakpoint-lg) {
+    row-gap: 1.875rem; 
   }
-  
+ 
   .title{
     font-size: 2.25rem;
     text-align: center;
     @include col-span-12;
-    
-    @media screen and (min-width: $breakpoint-sm) {
-      @include col-span-6;
-      text-align: left;
-    }
-
+            
     @media screen and (min-width: $breakpoint-lg) {
+      text-align: left;
       @include col-span-7;
     }
   }
 
   .navbar{
-    display: none;
+    @include col-span-12;
     @media screen and (min-width: $breakpoint-lg) {
-      display: block;
       @include col-span-3;
     }
 
     .list{
       display: flex;
-      flex-direction: row;
-      justify-content: end;
+      flex-direction: column;
+      align-items: center;
       column-gap: 1.25rem;
+      
+      @media screen and (min-width: $breakpoint-lg) {
+        flex-direction: row;
+        justify-content: end;
+        align-items: baseline;
+      }
     }
   }
 
@@ -46,12 +47,8 @@ header {
     @include col-span-12;
     text-align: center;
     
-    @media screen and (min-width: $breakpoint-sm) {
-      text-align: right;
-      @include col-span-6;
-    }
-    
     @media screen and (min-width: $breakpoint-lg) {
+      text-align: right;
       @include col-span-2;
     }
     

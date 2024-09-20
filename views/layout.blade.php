@@ -19,7 +19,6 @@
     <main>
       @yield('content')
     </main>
-    @include('components.footer')
     <script src="./library/js/scripts.min.js"></script>
   </div>
 </body>

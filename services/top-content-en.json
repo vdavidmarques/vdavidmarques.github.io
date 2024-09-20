@@ -1,0 +1,24 @@
+{
+  "main-card": {
+    "tag": "website wordpress",
+    "title": "Consultoria Vida Segura",
+    "description": "Official website for Consultoria Vida Segura products and services. Insurance, Health Plans and consortium. Adapted to the specific needs of the client.",
+    "image": "consultoria-vida-segura.jpg",
+    "cta-label": "read more",
+    "cta-link": "https://consultoriavidasegura.com",
+    "github": "https://github.com/vdavidmarques/consultoria-vida-segura"
+  },
+  "skill":{
+    "title": "Front-end developer",
+    "skills-title": "Skills",
+    "skills": [
+        "Wordpress Websites;",
+        "Landing Page Creation;",
+        "Responsive Design;",
+        "High fidelity designs;",
+        "Website redesign;",
+        "Performance optimization;",
+        "UX & UI."
+    ]
+  }
+}

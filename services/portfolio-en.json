@@ -1,0 +1,72 @@
+{
+  "portfolio": {
+    "list": [
+      {
+        "tag": "php website",
+        "title": "CloudAiTech",
+        "description": "Web design creation for a fictitious artificial intelligence systems company.",
+        "image": "cloudtech.jpg",
+        "github": "https://github.com/vdavidmarques/cloudtechai",
+        "behance": "https://www.behance.net/gallery/194220167/Ui-Design-Cloud",
+        "figma": "https://www.figma.com/proto/PDAyvQp3x5h47o9SUOLgoa/CloudAITech?page-id=1045%253A121&type=design&node-id=1073-176&viewport=-244%252C416%252C0.13&t=YElJpRhvfJw3M6Cg-1&scaling=scale-down-width&mode=design",
+        "cta-label": "see project",
+        "cta-link": "https://vdavidmarques.github.io/portfolio/php/cloudaitech"
+      },
+      {
+        "tag": "php website",
+        "title": "Baixada Web Studio",
+        "description": "Insurance, Health Plan and consortium products and services page, adapted to the specific needs of the client.",
+        "image": "baixada-web-studio.jpg",
+        "github": "https://github.com/vdavidmarques/baixada-web-studio",
+        "behance": "",
+        "figma":"",
+        "cta-label": "see project",
+        "cta-link": "https://baixada-web-studio.great-site.net/"
+      },
+      {
+        "tag": "webdesign",
+        "title": "Websites for carpentry shops",
+        "description": "For this project, I created a landing page for a carpentry company, focused on creating a professional yet accessible user experience. The goal was to highlight the company’s expertise",
+        "image": "sites-para-marcenarias.jpg",
+        "github": "",
+        "behance": "https://www.behance.net/gallery/207318583/Sites-para-marcenarias",
+        "figma":"",
+        "cta-label": "",
+        "cta-link": ""
+      },
+      {
+        "tag": "webdesign",
+        "title": "Yale School of Art",
+        "description": "Yale School of Art website redesign. You can find the original website at this url: www.art.yale.edu/",
+        "image": "yale-school.jpg",
+        "github": "",
+        "behance": "https://www.behance.net/gallery/193423337/Yale-School-of-Art-Redesign",
+        "figma":"https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/YALE-SCHOOL-%C2%ADOF-ART",
+        "cta-label": "",
+        "cta-link": ""
+      },
+      {
+        "tag": "banner webdesign",
+        "title": "Lead Ads",
+        "description": "In this project, I was tasked with creating three distinct variations of static creatives aimed at lead generation. ",
+        "image": "anuncios-para-lead.jpg",
+        "github": "",
+        "behance": "https://www.behance.net/gallery/207796311/Creative-Static-Ads-for-Lead-Capture",
+        "figma":"",
+        "cta-label": "",
+        "cta-link": ""
+      },
+      {
+        "tag": "webdesign",
+        "title": "REDESIGN LADING PAGE - Ebook",
+        "description": "TECHNICAL TEST - For the test, a landing page from an e-book was chosen so that a new layout could be created, based on the content of that landing page.",
+        "image": "ebook-lading-page.jpg",
+        "github": "",
+        "behance": "https://www.behance.net/gallery/121808165/Redesign-Lading-Page-Ebook",
+        "figma":"",
+        "cta-label": "",
+        "cta-link": ""
+      }
+    ]
+  }
+}

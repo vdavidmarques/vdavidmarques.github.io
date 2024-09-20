@@ -1,11 +1,17 @@
 @php
-    $jsonContent = file_get_contents('././services/portfolio.json');
-    $content = json_decode($jsonContent, true);
+    if ($_SERVER['REQUEST_URI'] === '/') 
+    {
+        $jsonContent = file_get_contents('././services/portfolio.json');
+        $content = json_decode($jsonContent, true);
+    } else {
+        $jsonContent = file_get_contents('././services/portfolio-en.json');
+        $content = json_decode($jsonContent, true);
+    }
 @endphp
 
 <section class="portfolio">
     @foreach ( $content['portfolio']['list'] as $list)
-        <article class="contents">
+        <article class="contents scroll-effect">
             <div class="thumbnail">
                 <img src="././library/images/{{ $list['image'] }}" alt="{{ $list['title'] }}" class="ease-in-out">
             </div>                

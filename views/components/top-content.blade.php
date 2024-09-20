@@ -1,10 +1,17 @@
 @php
+
+ if ($_SERVER['REQUEST_URI'] === '/') 
+{
     $jsonContent = file_get_contents('././services/top-content.json');
     $content = json_decode($jsonContent, true);
+ } else {
+    $jsonContent = file_get_contents('././services/top-content-en.json');
+    $content = json_decode($jsonContent, true);
+ }
 @endphp
 
 <section class="top-content portfolio">
-    <article class="main-card">
+    <article class="main-card scroll-effect">
         <div class="contents">
             <div class="thumbnail">
                 <img src="././library/images/{{ $content['main-card']['image'] }}" alt="{{ $content['main-card']['title'] }}" class="ease-in-out">
@@ -30,7 +37,7 @@
             </div>
         </div>
     </article>
-    <article class="skills">
+    <article class="skills scroll-effect">
         <h2 class="title">
             {{$content['skill']['title']}}
         </h2>

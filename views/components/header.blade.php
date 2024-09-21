@@ -2,10 +2,18 @@
   $page = $_GET['page'] ?? 'home'; 
 @endphp
 <header class="scroll-effect">
-  <h1 class="title scroll-effect">Vinícius Marques</h1>
+  @if($page === 'en' || $page === 'about' || $page === 'contact')
+    <a href="/?page=en" class="title scroll-effect">
+      <h1>Vinícius Marques</h1>
+    </a>
+  @else
+    <a href="/" class="title scroll-effect">
+      <h1>Vinícius Marques</h1>
+    </a>
+  @endif
   <nav class="navbar">
     <ul class="list">
-      @if($page === 'en')
+      @if($page === 'en' || $page === 'about' || $page === 'contact')
         <li><a href="/?page=about">About</a></li>
         <li><a href="/?page=contact">Contact</a></li> 
         <li>
@@ -14,8 +22,8 @@
           </a>
         </li>
       @else
-        <li><a href="/?page=about">Sobre</a></li>
-        <li><a href="/?page=contact">Contato</a></li> 
+        <li><a href="/?page=sobre">Sobre</a></li>
+        <li><a href="/?page=contato">Contato</a></li> 
         <li>
           <a href="/?page=en" class="scroll-effect language"> 
             EN
@@ -25,7 +33,7 @@
     </ul>
   </nav>
   <div class="download">
-    @if($page === 'en')
+    @if($page === 'en' || $page === 'about' || $page === 'contact')
       <a
       href="library/docs/curiculo-vdavidmarques-en.pdf"
       class="button scroll-effect download"

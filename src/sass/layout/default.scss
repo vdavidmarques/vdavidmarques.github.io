@@ -95,6 +95,10 @@ video {
   scroll-behavior: smooth;
 }
 
+html{
+  height: 100%;
+}
+
 body {
   width: 100%;
   @include font-alata;
@@ -211,6 +215,18 @@ img{
     &.blue{
       background-image: url('../icons/figma.svg');
     }
+  }
+
+  &.email{
+    background-image: url('../icons/email.svg');
+  }
+
+  &.instagram{
+    background-image: url('../icons/instagram.svg');    
+  }
+
+  &.wpp{
+    background-image: url('../icons/wpp.svg');    
   }
 
 }

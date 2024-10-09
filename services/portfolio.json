@@ -2,9 +2,17 @@
   "portfolio": {
     "list": [
       {
-        "tag": "website em php",
+        "tag": "ReactJs/Wordpress/TailWindCss",
+        "title": "Viveo",
+        "description": "Empresa de ecossistema especialista em cuidados. Tecnologias usadas: ReactJs, Wordpress, Rest Api, Tailwind",
+        "image": "viveo.png",
+        "cta-label": "Acesse o site",
+        "cta-link": "https://viveo.com.br/"
+      },
+      {
+        "tag": "PHP/SASS",
         "title": "CloudAiTech",
-        "description": "Criação de web design para um empresa de sistemas de inteligência artificial fictícia.",
+        "description": "Criação de web design para uma empresa de sistemas de inteligência artificial fictícia.",
         "image": "cloudtech.jpg",
         "github": "https://github.com/vdavidmarques/cloudtechai",
         "behance": "https://www.behance.net/gallery/194220167/Ui-Design-Cloud",
@@ -13,9 +21,9 @@
         "cta-link": "https://vdavidmarques.github.io/portfolio/php/cloudaitech"
       },
       {
-        "tag": "website em php",
+        "tag": "PHP/SASS",
         "title": "Baixada Web Studio",
-        "description": "Página de produtos e serviços de seguro, Plano de Saúde e consórcio, adaptados às necessidades específicas do cliente.",
+        "description": "Serviços de web design para microempreendedores locais. Especializados em criar sites profissionais e acessíveis, adaptados às necessidades únicas de pequenas empresas",
         "image": "baixada-web-studio.jpg",
         "github": "https://github.com/vdavidmarques/baixada-web-studio",
         "behance": "",
@@ -24,7 +32,7 @@
         "cta-link": "https://baixada-web-studio.great-site.net/"
       },
       {
-        "tag": "webdesign",
+        "tag": "UX/UI",
         "title": "Sites para marcenarias",
         "description": "Para este projeto, criei uma landing page para uma empresa de carpintaria, focada em criar uma experiência de usuário profissional, mas acessível. O objetivo era destacar a expertise da empresa",
         "image": "sites-para-marcenarias.jpg",
@@ -35,7 +43,7 @@
         "cta-link": ""
       },
       {
-        "tag": "webdesign",
+        "tag": "UX/UI",
         "title": "Yale School of Art",
         "description": "Redesigning do website da Yale School - Escola de arte. Você pode encontrar o site original nessa url: www.art.yale.edu/",
         "image": "yale-school.jpg",

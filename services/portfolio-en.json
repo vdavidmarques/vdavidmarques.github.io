@@ -2,7 +2,15 @@
   "portfolio": {
     "list": [
       {
-        "tag": "php website",
+        "tag": "ReactJs/Wordpress/TailWindCss",
+        "title": "Viveo",
+        "description": "Ecosystem company specializing in care. Technologies used: ReactJs, Wordpress, Rest Api, Tailwind. Wasnt responsible for Ui Design, only for the development",
+        "image": "viveo.png",
+        "cta-label": "see more",
+        "cta-link": "https://viveo.com.br/"
+      },
+      {
+        "tag": "PHP/SASS",
         "title": "CloudAiTech",
         "description": "Web design creation for a fictitious artificial intelligence systems company.",
         "image": "cloudtech.jpg",
@@ -13,9 +21,9 @@
         "cta-link": "https://vdavidmarques.github.io/portfolio/php/cloudaitech"
       },
       {
-        "tag": "php website",
+        "tag": "PHP/SASS",
         "title": "Baixada Web Studio",
-        "description": "Insurance, Health Plan and consortium products and services page, adapted to the specific needs of the client.",
+        "description": "Web design services for local microentrepreneurs. Specializing in creating professional and affordable websites tailored to the needs of unique small businesses.",
         "image": "baixada-web-studio.jpg",
         "github": "https://github.com/vdavidmarques/baixada-web-studio",
         "behance": "",

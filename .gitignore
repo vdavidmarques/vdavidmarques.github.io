@@ -6,3 +6,5 @@ vendor/
 cache/
 composer.json
 composer.lock
+*.download
+

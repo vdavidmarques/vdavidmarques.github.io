@@ -10,6 +10,22 @@
         "cta-link": "https://viveo.com.br/"
       },
       {
+        "tag": "ReactJs/Wordpress/TailWindCss",
+        "title": "Rolim Goulart Cardoso",
+        "description": "Empresa de serviços jurídicos.Tecnologias usadas: ReactJs, Wordpress, Rest Api, Tailwind",
+        "image": "rolim-goulart-cardoso.jpg",
+        "cta-label": "Veja o projeto",
+        "cta-link": "https://www.rolim.com/"
+      },
+      {
+        "tag": "ReactJs/Wordpress/TailWindCss",
+        "title": "Agni",
+        "description": "Organização sem fins lucrativos dedicada a promover desenvolvimento econômico e social do Brasil de maneira ambientalmente sustentável.",
+        "image": "agni.jpg",
+        "cta-label": "Veja mais",
+        "cta-link": "https://www.agni.org.br/"
+      },
+      {
         "tag": "PHP/SASS",
         "title": "CloudAiTech",
         "description": "Criação de web design para uma empresa de sistemas de inteligência artificial fictícia.",

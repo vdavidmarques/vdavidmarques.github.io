@@ -36,3 +36,4 @@ Clone o repositório e instale as dependências do projeto:
 git clone git@github.com:vdavidmarques/vdavidmarques.github.io.git
 cd vdavidmarques.github.io
 npm install
+npm run start

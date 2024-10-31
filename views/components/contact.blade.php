@@ -7,6 +7,8 @@
             </p>
             <div class="links">
                 <a href="mailto:vdavimarques@gmail.com" class="icon email" target="_blank"></a>
+                <a href="https://github.com/vdavidmarques" class="icon github blue" target="_blank"></a>
+                <a href="https://www.behance.net/viniciusdavidmarques" class="icon behance blue" target="_blank"></a>
                 <a href="https://api.whatsapp.com/send?phone=5513988264181" class="icon wpp" target="_blank"></a>
                 <a href="https://www.instagram.com/viniciusdavidm" class="icon instagram" target="_blank"></a>
             </div>

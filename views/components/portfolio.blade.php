@@ -13,7 +13,7 @@
     @foreach ( $content['portfolio']['list'] as $list)
         <article class="contents scroll-effect">
             <div class="thumbnail">
-                <img src="././library/images/{{ $list['image'] }}" alt="{{ $list['title'] }}" class="ease-in-out">
+                <img src="././dist/images/{{ $list['image'] }}" alt="{{ $list['title'] }}" class="ease-in-out">
             </div>                
             <div class="content">
                 <div class="texts">

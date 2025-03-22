@@ -5,15 +5,17 @@
     display: grid;
     margin-top: 2.5rem;
     @include grid-cols-1;
+    column-gap: 1.25rem;
     row-gap: 2.5rem;
 
     @media (min-width: $breakpoint-xl){
         @include grid-cols-2;
-        column-gap: 1.25rem;
+        column-gap: 2.5rem;
+        row-gap: 5rem;
     }
 
     .contents{
-        background-color: $gray-light;
+        background-color: $white;
         color: $blue-dark;
         @include grid-cols-6;
         display: grid;
@@ -29,7 +31,7 @@
             overflow: hidden;
 
             @media (min-width: $breakpoint-lg){
-                @include border-radius;
+                border-radius: 0;
                 @include col-span-3;
             }
             img {
@@ -38,14 +40,16 @@
             }
         }
         .content{
-            padding: 1.25rem;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-items: center;
             @include col-span-12;
+            margin-top: 0;
 
             @media (min-width: $breakpoint-lg){
                 @include col-span-3;
+                padding: 2.5rem;
             }
 
             .texts{

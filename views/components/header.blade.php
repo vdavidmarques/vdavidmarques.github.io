@@ -35,13 +35,13 @@
   <div class="download">
     @if($page === 'en' || $page === 'about' || $page === 'contact')
       <a
-      href="library/docs/curiculo-vdavidmarques-en.pdf"
+      href="dist/docs/curiculo-vdavidmarques-en.pdf"
       class="button scroll-effect download"
       target="_blank"
       >Download CV</a>
     @else
       <a
-        href="library/docs/curiculo-vdavidmarques-sao-paulo.pdf"
+        href="dist/docs/curiculo-vdavidmarques-sao-paulo.pdf"
         class="button scroll-effect download"
         target="_blank"
         >Download CV</a

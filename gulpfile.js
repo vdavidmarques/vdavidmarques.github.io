@@ -8,14 +8,14 @@ gulp.task('styles', function() {
     return gulp.src('src/sass/**/*.scss') // Caminho dos arquivos Sass
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('library/css')); // Pasta de destino dos arquivos minificados
+        .pipe(gulp.dest('dist/css')); // Pasta de destino dos arquivos minificados
 });
 
 // Tarefa para minificar JavaScript
 gulp.task('scripts', function() {
     return gulp.src('src/js/**/*.js') // Caminho dos arquivos JavaScript
         .pipe(terser())
-        .pipe(gulp.dest('library/js')); // Pasta de destino dos arquivos minificados
+        .pipe(gulp.dest('dist/js')); // Pasta de destino dos arquivos minificados
 });
 
 // Tarefa para monitorar mudanças

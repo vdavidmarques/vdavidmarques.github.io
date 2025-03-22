@@ -1,7 +1,7 @@
 *.Identifier
 node_modules
-library/css/helpers
-library/css/layout
+dist/css/helpers
+dist/css/layout
 vendor/
 cache/
 composer.json

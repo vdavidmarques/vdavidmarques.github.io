@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./library/css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
 
    @include ('helpers.favicon')
   
@@ -19,7 +19,7 @@
     <main>
       @yield('content')
     </main>
-    <script src="./library/js/scripts.min.js"></script>
+    <script src="./dist/js/scripts.min.js"></script>
   </div>
 </body>
 </html>

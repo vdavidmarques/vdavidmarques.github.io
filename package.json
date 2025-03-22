@@ -2,7 +2,7 @@
   "name": "vdavidmarques",
   "version": "1.0.0",
   "scripts": {
-    "sass-watch": "sass --watch src/sass/styles.scss:library/css/styles.css",
+    "sass-watch": "sass --watch src/sass/styles.scss:dist/css/styles.css",
     "gulp": "gulp",
     "start": "concurrently \"php -S localhost:8000\" \"gulp\""
   },

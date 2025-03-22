@@ -14,7 +14,7 @@
     <article class="main-card scroll-effect">
         <div class="contents">
             <div class="thumbnail">
-                <img src="././library/images/{{ $content['main-card']['image'] }}" alt="{{ $content['main-card']['title'] }}" class="ease-in-out">
+                <img src="././dist/images/{{ $content['main-card']['image'] }}" alt="{{ $content['main-card']['title'] }}" class="ease-in-out">
             </div>
             <div class="content">
                 <div class="texts">
